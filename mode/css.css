@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: #ccc;
+    color: #333333;
+    
+}
+html {
+    font-family: serif;
+    font-size: 1em;
+    height: 100%;
+}
+.container {
+    width: 60%;
+    margin: 1em auto;
+}
+img {
+    display: block;
+    width: 12em;
+    height: 12em;
+    clear: both;
+    
+}
+li {
+    float: left;
+    padding: 1em;
+}
+ul {
+    padding: 0;
+}
+a {
+    color: #c60;
+    text-decoration: none;
+}
+p {
+    margin-top: 20px;
+}
