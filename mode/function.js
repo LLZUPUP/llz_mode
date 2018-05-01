@@ -1,4 +1,4 @@
-window.onload=function(){
+// window.onload=function(){
     function showPic(whichpic) {
         var source = whichpic.getAttribute("href");
         var placeholder = document.getElementById("placeholder");
@@ -7,5 +7,5 @@ window.onload=function(){
         var description = document.getElementById("description");
         description.firstChild.nodeValue=text;
     }
-}
+// }
 // aaaa
