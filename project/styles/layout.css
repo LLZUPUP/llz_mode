@@ -15,7 +15,9 @@ body,html {
 }
 body {
     margin: 1em auto;
-    background: url(../images/youku.png) left top no-repeat ;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../images/youku.png);
     background-size: cover;
     max-width: 80em;
     
