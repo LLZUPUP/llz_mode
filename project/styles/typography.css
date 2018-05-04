@@ -1,0 +1,41 @@
+body {
+    font-size: 76%;
+    font-family: "Arial",serif;
+}
+body * {
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav {
+    font-family: "Arial",serif;
+}
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+article {
+    line-height: 1.8;
+}
+article p {
+    margin: 1em 0;
+}
+h1 {
+    font: 1.6em normal;
+}
+h2 {
+    font: 1.4em normal;
+    margin-top: 1em;
+}
+h3 {
+    font: 1.2em normal;
+    margin-top: 1em;
+}
+#imagegallery li {
+    list-style-type: none;
+}
+textarea {
+    font-family: "Arial",serif;
+}

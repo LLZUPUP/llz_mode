@@ -6,8 +6,8 @@ function highlightRows() {
     if(!document.getElementsByTagName) return false;
     var rows = document.getElementsByTagName("tr");
     var thead = document.getElementsByTagName("th");
-    console.log(rows);
-    console.log(thead);
+    // console.log(rows);
+    // console.log(thead);
     for(var i =0;i<rows.length;i++) {
         rows[i].onmouseover = function() {
             this.style.fontWeight = "bold";
