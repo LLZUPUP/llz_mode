@@ -15,9 +15,10 @@ body,html {
 }
 body {
     margin: 1em auto;
-    background: url(../images/001.jpg) left top no-repeat;
+    background: url(../images/001.jpg) left top no-repeat ;
     background-size: cover;
     max-width: 80em;
+    
 }
 header {
     background: url(../images/one.jpeg) bottom right;
