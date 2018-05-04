@@ -14,7 +14,7 @@ var LazyLoadImage = (function(){
             // console.log(url);
             // 异步
             oImg.onload = function() {
-                ele.style.backgroundImage = "url("+url+")";
+                ele.style.backgroundImage = `url(${url})`;
                 document.body.removeChild(this);
                 // 不会立即执行
                 // 后执行
