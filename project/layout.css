@@ -28,6 +28,7 @@ header {
     background-size: cover;
     border: .1em solid;
     border-bottom-width: none;
+    box-sizing: border-box;
 }
 header .image {
     width: 100%;
@@ -40,28 +41,27 @@ header img {
 
 header nav {
     background:url(./images/two.jpeg) bottom left repeat-x;
-    border: .1em solid;
-    border-bottom-width: 0;
-    border-top-width: 0;
-    padding-left: 10%;
 }
 header nav ul {
     overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex:1;
     width: 100%;
-    border-left: .1em solid;
+    text-align: center;
 }
 header nav li {
-    display: inline;
+    width: 25%;
+    list-style: none;
 }
 header nav li a {
     display: block;
-    padding: .5em 2em;
-    float: left;
+    width: 100%;
+    padding: .5em 0;
     border-right: .1em solid;
 }
 article {
-    border: .1em solid;
-    border-top-width: 0;
     line-height: 1.8;
     padding: 2em 10%;
 }
