@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/basic.css">
+    <script src="./scripts/lazyload.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="image">
+            <img class="replacepic" src="./images/youku.png" alt="周杰伦演唱会">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div class="page_hd">
+            <h1>Photos of the band</h1>
+            <ul id="imagegallery">
+                <li><a href="./images/photos/jayone.jpg" title="one"><img src="./images/photos/thumone.jpg" alt="" class="shumpic"></a></li>
+                <li><a href="./images/photos/jaytwo.jpg" title="two"><img src="./images/photos/thumtwo.jpg" alt="" class="shumpic"></a></li>
+                <li><a href="./images/photos/jaythree.jpg" title="three"><img src="./images/photos/thumthree.jpg" alt="" class="shumpic"></a></li>
+                <li><a href="./images/photos/jayfour.jpg" title="four"><img src="./images/photos/thumfour.jpg" alt=""class="shumpic"></a></li>
+            </ul>
+        </div>
+    </article>
+        
+        
+</div>
+<script>
+    window.onload = function() {
+        const bod = document.body;
+        LazyLoadImage.setSrc(bod,"./images/chicken2.png");
+        const replacepic = document.querySelector(".replacepic");
+        LazyLoadImage.replaceSrc(replacepic,"./images/Jay.png");
+        showPic();
+
+
+        
+        
+        
+
+    }
+</script>
+</body>
+</html>

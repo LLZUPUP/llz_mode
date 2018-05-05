@@ -14,10 +14,11 @@ body,html {
     height: 100%;
 }
 body {
-    margin: 1em auto;
+    margin: 5em auto;
     background-position: left top;
     background-repeat: no-repeat;
     background-image: url(./images/youku.png);
+    background-attachment: fixed;
     background-size: cover;
     max-width: 80em;
     
@@ -64,7 +65,22 @@ article {
     line-height: 1.8;
     padding: 2em 10%;
 }
-article img {
-    border: .1em solid;
-    outline: .1em solid;
+#imagegallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+#imagegallery  li {
+    width: 50%;
+    margin-top: 3em;
+}
+#imagegallery .shumpic {
+    box-sizing: border-box;
+    width: 60%;
+    border: .5em solid rgba(255, 215, 000,.2);
+}
+#container .page_hd {
+    text-align: center;    
+}
+#addpic {
+    width: 100%;
 }

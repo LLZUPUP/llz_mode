@@ -36,3 +36,70 @@ var LazyLoadImage = (function(){
         }
     }
  })();
+
+ function showSection(eleId) {
+     var sections = document.getElementsByTagName("section");
+     for(var i=0;i<sections.length;i++) {
+        sections[i].style.display = "none";
+        if(sections[i].id != eleId) {
+            sections[i].style.display = "none";
+        }else {
+            sections[i].style.display = "block";
+        }
+     }
+ }
+function prepareLink() {
+    if(!document.getElementsByTagName) return false;
+    if(!document.getElementById) return false;
+    var articles = document.getElementsByTagName("article");
+    if(articles.length == 0) return false;
+    var navs = articles[0].getElementsByTagName("nav");
+    if(navs.length == 0) return false;
+    var nav = navs[0];
+    var links = nav.getElementsByTagName("a");
+    for(var i = 0;i<links.length;i++) {
+        var section = links[i].href.split("#")[1];
+        links[i].tar = section;
+        // console.log(section);
+        links[i].onclick = function() {
+            showSection(this.tar);
+        }
+    }
+    var sum = document.getElementById("sum");
+    sum.onmouseover = function() {
+        this.style.cursor = "pointer";
+    }
+    sum.onmouseout = function() {
+        this.style.cursor = "default";
+    }
+    sum.onclick = function() {
+        var sections = document.getElementsByTagName("section");
+        for(var i=0;i<sections.length;i++) {
+            sections[i].style.display = "block";
+        }
+    }
+}
+
+
+function showPic() {
+    var description = document.createElement("p");
+    var pageHd = document.getElementsByClassName("page_hd");
+    var oImg = document.createElement("img");
+    oImg.id = "addpic";
+    pageHd[0].appendChild(description);
+    pageHd[0].appendChild(oImg);
+    function preparePic(ele) {
+        description.innerText = ele.title;
+        oImg.src= ele.href;
+    }
+    var imagegallery = document.querySelector("#imagegallery");
+    var links = imagegallery.getElementsByTagName("a");
+    for(var i=0;i<links.length;i++) {
+        links[i].onclick = function(event) {
+            event.preventDefault();
+            preparePic(this);
+        }
+    }    
+}
+
+

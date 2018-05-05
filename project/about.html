@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="./styles/basic.css">
+    <script src="./scripts/lazyload.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="image">
+                <img class="replacepic" src="./images/youku.png" alt="周杰伦演唱会">
+            </div>
+            <nav>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="live.html">Live</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1 id="sum">About the band</h1>
+            <nav>
+                <ul>
+                    <li><a href="#jay">Jay zhou</a></li>
+                    <li><a href="#domsters">The Domsters</a></li>
+                </ul>
+            </nav>
+            <section id="jay">
+                <h1>Jay zhou</h1>
+                <p>The first personal album "Jay" was released in 2000. In 2001,
+                    the album "Fantasia" laid the fusion of Chinese and Western styles 
+                    of music. In 2002, the "The One" World Tour was held</p>
+                <p>In 2005, he won the Taiwan Film Golden Horse Award and the Hongkong 
+                    Film Golden Award Best Newcomer Award with the action movie "D". Since 
+                    2006, it has won the world music award three best seller in China for.</p>
+            </section>
+            <section id="domsters">
+                    <h1>The Domsters</h1>
+                    <p>Jolin, his native name, Cai Yiling, of Quanzhou, Fujian 
+                        Province, was born in Xinzhuang City, Taipei County, Taiwan (Xinzhu
+                        ang District, Xinzhuang District) in Taipei County, Taiwan, in September 15, 1980. </p>
+                    <p>In his family, a sister and father Cai Zhuchen had been 
+                        engaged in accounting work; mother H
+                        uang Chunmei was a low profile and rarely appeared in front of the media.</p>
+                </section>
+        </article>
+    </div>
+    <script>
+        window.onload = function() {
+            const bod = document.body;
+            LazyLoadImage.setSrc(bod,"./images/chicken2.png");
+            const replacepic = document.querySelector(".replacepic");
+            LazyLoadImage.replaceSrc(replacepic,"./images/Jay.png");
+            prepareLink();
+    
+        }
+    </script>
+</body>
+</html>
