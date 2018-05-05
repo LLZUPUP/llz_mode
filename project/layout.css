@@ -17,13 +17,13 @@ body {
     margin: 1em auto;
     background-position: left top;
     background-repeat: no-repeat;
-    background-image: url(../images/youku.png);
+    background-image: url(./images/youku.png);
     background-size: cover;
     max-width: 80em;
     
 }
 header {
-    background: url(../images/one.jpeg) bottom right;
+    background: url(./images/one.jpeg) bottom right;
     background-size: cover;
     border: .1em solid;
     border-bottom-width: none;
@@ -38,7 +38,7 @@ header img {
 }
 
 header nav {
-    background:url(../images/two.jpeg) bottom left repeat-x;
+    background:url(./images/two.jpeg) bottom left repeat-x;
     border: .1em solid;
     border-bottom-width: 0;
     border-top-width: 0;

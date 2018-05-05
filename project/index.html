@@ -13,7 +13,7 @@
     <!-- aa -->
     <header>
         <div class="image">
-            <img src="./images/Jay.png" alt="周杰伦演唱会">
+            <img class="replacepic" src="./images/youku.png" alt="周杰伦演唱会">
         </div>
         <nav>
              <ul>
@@ -38,7 +38,10 @@
 <script>
     window.onload = function() {
         const bod = document.body;
-        LazyLoadImage.setSrc(bod,"./images/two.jpeg");
+        LazyLoadImage.setSrc(bod,"./images/chicken2.png");
+        const replacepic = document.querySelector(".replacepic");
+        LazyLoadImage.replaceSrc(replacepic,"./images/Jay.png");
+
     }
 </script>
 </body>

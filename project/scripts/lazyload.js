@@ -20,9 +20,19 @@ var LazyLoadImage = (function(){
                 // 不会立即执行
                 // 后执行
             }
-            // 先执行
+        },
+        
+        replaceSrc: function(ele,eleUrl) {
             
-
+            const oImg = document.createElement("img");
+            
+            oImg.style.display = 'none';
+            document.body.appendChild(oImg);
+            oImg.src=eleUrl;
+            oImg.onload = function() {
+                ele.src = eleUrl;
+                document.body.removeChild(this);
+            }
         }
     }
  })();
