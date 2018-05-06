@@ -25,9 +25,7 @@ body {
 }
 header {
     background: url(./images/one.jpeg) bottom right;
-    background-size: cover;
-    border: .1em solid;
-    border-bottom-width: none;
+    background-size: contain;
     box-sizing: border-box;
 }
 header .image {
@@ -35,7 +33,7 @@ header .image {
 }
 header img {
     display: block;
-    margin: 1em auto;
+    margin: 0em auto;
     width: 60%;
 }
 
