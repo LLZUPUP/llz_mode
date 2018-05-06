@@ -84,3 +84,32 @@ article {
 #addpic {
     width: 100%;
 }
+td {
+    padding: .5em .5em;
+    width: 30%;
+    color: #223;
+    background-color: #eb6;
+}
+th {
+    color: #edc;
+    background-color: #455;
+}
+tr {
+    width: 100%;
+}
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+.page_hd  .submit{
+    width: 4em;
+    height: 2em;
+    background-color: #fff;
+    border-radius: 2em 2em;
+}
+.page_hd fieldset {
+    font-size: .9rem;
+}
+.page_hd label {
+    display: block;
+}

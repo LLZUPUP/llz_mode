@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live行程</title>
+    <link rel="stylesheet" href="./styles/basic.css">
+    <script src="./scripts/lazyload.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="image">
+            <img class="replacepic" src="./images/youku.png" alt="周杰伦演唱会">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div class="page_hd">
+            <form action="submit.html" method="post">
+                <fieldset>
+                    <legend>Contact the band</legend>
+                    <p>
+                        <label for="name" >Name:</label>
+                            <input id="name" type="text" placeholder="请输入您的名字" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                            <input id="email" type="email" placeholder="请输入您的邮箱" required>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required placeholder="请输入您的建议"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="send" class="submit">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        
+    </article>
+        
+        
+</div>
+<script>
+    window.onload = function() {
+        const bod = document.body;
+        LazyLoadImage.setSrc(bod,"./images/chicken2.png");
+        const replacepic = document.querySelector(".replacepic");
+        LazyLoadImage.replaceSrc(replacepic,"./images/Jay.png");
+        var subMit = document.querySelector(".submit");
+        subMit.onclick = function(event) {
+            event.preventDefault();
+            window.location.href = "/submit.html";
+        }
+
+        
+        
+        
+
+    }
+</script>
+</body>
+</html>

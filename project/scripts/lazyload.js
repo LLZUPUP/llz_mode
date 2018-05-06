@@ -102,4 +102,30 @@ function showPic() {
     }    
 }
 
+function highlightRows() {
+    if(!document.getElementsByTagName) return false;
+    var rows = document.getElementsByTagName("td");
+    var thead = document.getElementsByTagName("th");
+    // console.log(rows);
+    // console.log(thead);
+    for(var i =0;i<rows.length;i++) {
+        rows[i].onmouseover = function() {
+            this.style.fontWeight = "800";
+            this.style.backgroundColor = "green";
+        }
+        rows[i].onmouseout = function() {
+            this.style.fontWeight = "normal";
+            this.style.backgroundColor = "#eb6";
+        }
+    }
+    for(var i = 0;i<thead.length;i++) {
+        thead[i].onmouseover = function() {
+            this.style.fontWeight = "800";
+        }
+        thead[i].onmouseout = function() {
+            this.style.fontWeight = "normal";
+        }
+    }
+}
+
 
