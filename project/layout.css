@@ -63,6 +63,9 @@ article {
     line-height: 1.8;
     padding: 2em 10%;
 }
+article li {
+    list-style: none;
+}
 #imagegallery {
     display: flex;
     flex-wrap: wrap;
