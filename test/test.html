@@ -78,17 +78,52 @@
         // alert(a);
         // a=6;
         // a();
-        function a() {
-            console.log(10);
-        }
-        var a;
+        // function a() {
+        //     console.log(10);
+        // }
+        // var a;
         // window.
 
         // function() {
         //     b
         // }
-        console.log(a);
-        
+        // console.log(a);
+        // function foo(,a) {
+        //     console.log(a,b);
+        //     // eval(str);
+        //     var b =3;
+        // }
+        // var b = 2;
+        // foo("var b = 3",1);
+        // console.log(window.b);
+        // function foo(str) {
+        //     "use strict";
+        //     eval(str);
+        //     console.log(a);
+        // }
+        // foo("var a = 2");
+        // function foo(a) {
+        //     var b = 2;
+        //     function bar() {
+        //         console.log(a);
+        //     }
+        //     var c = 3;
+        //     console.log(a,b,c);
+        //     bar();
+        // }
+        // foo(1);
+        // console.log(a,b,c);
+        // bar();
+        function foo() {
+            function bar(a) {
+                var i = 3;
+                console.log(a+i);
+            }
+            for(var i =0;i<10;i++) {
+                bar(i*2);
+            }
+        }
+        foo();
         
        
     </script>
