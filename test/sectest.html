@@ -124,6 +124,20 @@
             return sum;
         }
         console.log(getSum(9))
+        var myObject = {
+            key: "1123",
+            name: "lelele",
+            a: "asdas",
+            b: "asafas"
+        }
+        var yourObject= {
+            c:"sadasd"
+        }
+        var newObject= {};
+        Object.assign(newObject,myObject,yourObject);
+        console.log(newObject)
+        console.log(newObject.hasOwnProperty("d"));
+        console.log(("d" in newObject));
 
     </script>
     
